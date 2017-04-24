@@ -49,16 +49,14 @@ Followers <span class="badge">
 <%= 'active' if current_page?(likings_user_path(@user)) %>
 ">
 <%= link_to likings_user_path(@user) do %>
-likes <span class="badge">
+Likes <span class="badge">
 <%= @count_likings %>
 </span>
 <% end %>
 </li>
-
-
     </ul>
     
-<%= render 'microposts/microposts', microposts: @microposts, user: @user %>
- 
+<%= render 'microposts/microposts', microposts: @likings, user: @user %>
+
   </div>
 </div>
